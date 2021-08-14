@@ -47,7 +47,7 @@
 }
 
 .banner-main {
-  margin-top: 20vh;
+  margin-top: 25vh;
   .title {
     font-weight: bold;
     font-size: 37px;
@@ -106,12 +106,12 @@
 .banner-desktop {
   position: absolute;
   left: 0;
-  top: 180px;
+  top: 100px;
   right: 0;
   bottom: 0;
   background-image: url('/images/home/banner/desktop.png');
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: right;
   background-size: 50%;
 }
 
