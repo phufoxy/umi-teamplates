@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('SVN-Gilroy.eot');
+    src: url('SVN-Gilroy.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Gilroy.woff2') format('woff2'),
+        url('SVN-Gilroy.woff') format('woff'),
+        url('SVN-Gilroy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

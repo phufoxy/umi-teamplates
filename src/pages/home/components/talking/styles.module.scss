@@ -1,0 +1,50 @@
+@import '@/assets/styles/mixins.scss';
+
+.wrapper-container {
+  padding: 100px 0;
+  background-image: url('/images/home/talking/bg.png');
+}
+
+.heading-container {
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+    color: $text-white;
+  }
+  .norm {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-white;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.counter-container {
+  display: flex;
+  padding: 0 20vw;
+  justify-content: space-between;
+  .counter-item {
+    text-align: center;
+    width: 30%;
+  }
+  span[class*='icon'] {
+    color: $text-white;
+    font-size: 40px;
+  }
+  .number {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 38px;
+    color: $text-yellow;
+    overflow: hidden;
+  }
+  .norm {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: $text-white;
+  }
+}

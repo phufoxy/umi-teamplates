@@ -1,0 +1,80 @@
+@import '@/assets/styles/mixins.scss';
+
+.header-container {
+  padding: 0 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+  &:global(.header-container-loader) {
+    top: -100px;
+    transition: 0.3s ease-in-out;
+  }
+  &:global(.header-sticky) {
+    z-index: 9999;
+    .title {
+      color: $text-purple;
+    }
+    .menu-container {
+      .link {
+        color: $text-purple;
+      }
+    }
+    .social-container {
+      color: $text-purple;
+      span[class*='icon'] {
+        color: $text-purple;
+      }
+    }
+  }
+  .logo {
+    max-width: 44px;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-white;
+    padding-left: 10px;
+  }
+}
+
+.menu-container {
+  .menu-item {
+    margin: 0 30px;
+  }
+  .link {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-white;
+  }
+}
+
+.social-container {
+  color: $text-white;
+  .social-item {
+    margin: 0 16px;
+  }
+  span[class*='icon'] {
+    color: $text-white;
+  }
+}
+
+.content {
+  flex: unset;
+  min-height: auto;
+}
+
+.footer-container {
+  padding: 0 20vw;
+  color: $text-white;
+  padding: 26px 20vw;
+  &:global(.ant-layout-footer) {
+    background-color: #0a1437;
+  }
+  &:global(.footer-container-loader) {
+    opacity: 0;
+  }
+}

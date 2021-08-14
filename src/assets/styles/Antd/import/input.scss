@@ -1,0 +1,97 @@
+// Import mixins
+@import "@/assets/styles/mixins.scss";
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN INPUT */
+
+.ant-input-disabled {
+  background: $gray-lighten-more-more;
+}
+
+.input-number {
+  &.ant-input-number {
+    width: 100%;
+  }
+}
+
+.input-login {
+  .ant-input {
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid #d6ebdf;
+  }
+}
+
+.input-password {
+  .ant-input-password {
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid #d6ebdf;
+    .ant-input {
+      height: auto;
+    }
+  }
+}
+
+.radio-custom {
+  .ant-radio-wrapper {
+    // display: block;
+    // margin: 10px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    .ant-radio {
+      > input {
+        width: 22px;
+        height: 22px;
+      }
+
+      .ant-radio-inner {
+        width: 24px;
+        height: 24px;
+
+        &::after {
+          width: 16px;
+          height: 16px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.ant-input {
+  border-radius: 6px;
+  border: 1px solid #e0e7f0;
+  height: 36px;
+}
+
+.ant-picker {
+  border-radius: 6px;
+  border: 1px solid #e0e7f0;
+  height: 36px;
+}
+
+.ant-select-selector {
+  border-radius: 6px !important;
+  height: 36px !important;
+  padding: 2px 11px !important;
+}
+
+.input-not-border {
+  border: none;
+  padding: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: #2c2e31;
+}

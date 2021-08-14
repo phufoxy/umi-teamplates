@@ -1,0 +1,64 @@
+@import '@/assets/styles/mixins.scss';
+
+.wrapper-container {
+  padding: 200px 15vw;
+  background-image: url('/images/home/our-team/bg.png');
+  background-size: 100% 100%;
+}
+
+.heading-container {
+  background-image: url('/images/home/our-team/circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+    color: $text-white;
+  }
+}
+
+.wrapper-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  width: calc(100% / 3 - 30px);
+  background: rgba(56, 60, 175, 0.15);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  margin: 10px 15px;
+  padding: 35px;
+  &:hover {
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.55);
+  }
+  &.card-container-last {
+    background: rgba(1, 6, 13, 0.2);
+  }
+  .image-container {
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+    color: $text-white;
+  }
+  .norm {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-white;
+    text-align: center;
+  }
+}

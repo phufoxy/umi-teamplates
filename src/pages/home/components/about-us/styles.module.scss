@@ -1,0 +1,52 @@
+@import '@/assets/styles/mixins.scss';
+
+.wrapper-container {
+  padding: 100px 15vw;
+}
+
+.heading-container {
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+    color: $text-purple;
+  }
+}
+
+.wrapper-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-container {
+  width: 45%;
+  span[class*='icon'] {
+    font-size: 60px;
+    color: $text-yellow;
+  }
+  .title {
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text-purple;
+    &::after {
+      content: '';
+      height: 20px;
+      width: 3px;
+      background-color: $background-yellow;
+      position: absolute;
+      left: -10px;
+      top: 5px;
+    }
+  }
+  .norm {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: $text;
+  }
+}

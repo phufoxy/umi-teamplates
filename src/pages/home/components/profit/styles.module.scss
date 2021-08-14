@@ -1,0 +1,90 @@
+@import '@/assets/styles/mixins.scss';
+
+.wrapper-container {
+  padding: 100px 0;
+  background-image: url('/images/home/profit/bg.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+}
+
+.heading-container {
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 58px;
+    color: $text-purple;
+  }
+  .norm {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: $text;
+  }
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  .tab-content {
+    display: flex;
+    background-color: $background-white;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+  }
+  .tab-item {
+    padding: 18px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 28px;
+    cursor: pointer;
+    &.active {
+      font-weight: 500;
+      background-color: $background-purple;
+      color: $text-white;
+    }
+  }
+}
+
+.profit-container {
+  display: flex;
+}
+
+.profit-image {
+  width: 50%;
+  img {
+    width: 100%;
+  }
+}
+
+.profit-content {
+  width: 50%;
+  padding-right: 15%;
+  .title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 58px;
+    color: $text-purple;
+  }
+  .norm {
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 34px;
+    color: $text;
+  }
+  .button {
+    background-color: $background-purple;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-white;
+    border-radius: 70px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    span[class*='icon'] {
+      padding-left: 10px;
+    }
+  }
+}
